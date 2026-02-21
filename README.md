@@ -1,5 +1,6 @@
 # Priyamvada — Java Full Stack Developer Portfolio
 
+
 ![Portfolio Preview](assets/icons/og-image.svg)
 
 A modern, responsive personal portfolio website built with **HTML5, CSS3 & Vanilla JavaScript**.

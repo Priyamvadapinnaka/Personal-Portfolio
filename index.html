@@ -255,35 +255,37 @@
             </div>
 
             <div class="about-grid">
-                <!-- Left: Image + Social -->
+                <!-- Left: Image with social icons inside -->
                 <div class="about-image-col" data-aos>
                     <div class="about-image-wrapper">
                         <div class="about-image-frame">
-                            <!-- Gradient monogram avatar (replace with real photo when available) -->
-                            <div class="about-avatar-monogram" aria-label="Priyamvada avatar">
-                                <span class="monogram-letter">P</span>
-                                <div class="monogram-ring"></div>
+                            <!-- Profile photo -->
+                            <img src="assets/icons/og-image.jpeg" alt="Priyamvada — Java Full Stack Developer"
+                                class="about-avatar-photo" />
+                            <!-- Minimal dark overlay at bottom for icon contrast -->
+                            <div class="about-photo-overlay"></div>
+                            <!-- Social icons inside the circular frame -->
+                            <div class="about-social">
+                                <a href="https://www.linkedin.com/in/priyamvada-pinnaka-51aa26300" target="_blank"
+                                    rel="noopener noreferrer" class="social-icon" id="aboutLinkedin"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/priyamvada" target="_blank" rel="noopener noreferrer"
+                                    class="social-icon" id="aboutGithub" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="mailto:priyamvadauthsav714@gmail.com" class="social-icon" id="aboutEmail"
+                                    aria-label="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
                             </div>
                         </div>
                         <div class="about-image-dots"></div>
                     </div>
-                    <div class="about-social">
-                        <a href="https://www.linkedin.com/in/priyamvada-pinnaka-51aa26300" target="_blank"
-                            rel="noopener noreferrer" class="social-icon" id="aboutLinkedin" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/priyamvada" target="_blank" rel="noopener noreferrer"
-                            class="social-icon" id="aboutGithub" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:priyamvadauthsav714@gmail.com" class="social-icon" id="aboutEmail"
-                            aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
                 </div>
 
-                <!-- Right: Text -->
+                <!-- Right: Text content -->
                 <div class="about-content-col" data-aos>
                     <h3 class="about-heading">
                         Java Full Stack Developer &amp; <span class="gradient-text">Problem Solver</span>
@@ -325,7 +327,6 @@
                     </a>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- ===== SKILLS SECTION ===== -->
@@ -647,8 +648,12 @@
                     data-date="July 2025" data-color="linear-gradient(135deg, #f89820 0%, #6366F1 100%)"
                     data-icon="fa-book-open">
                     <div class="project-card-inner">
-                        <div class="project-image"
-                            style="background: linear-gradient(135deg, #f89820 0%, #6366F1 100%);">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80&fit=crop"
+                                alt="Java E-Learning Platform" class="project-img-bg" />
+                            <div class="project-img-overlay"
+                                style="background: linear-gradient(135deg, rgba(248,152,32,0.55) 0%, rgba(99,102,241,0.65) 100%);">
+                            </div>
                             <i class="fas fa-book-open project-icon"></i>
                             <div class="project-overlay">
                                 <button class="project-link-btn modal-trigger-btn" aria-label="View Details">
@@ -688,8 +693,12 @@
                     data-demo="#" data-date="March 2024" data-color="linear-gradient(135deg, #06B6D4 0%, #6366F1 100%)"
                     data-icon="fa-laptop-code">
                     <div class="project-card-inner">
-                        <div class="project-image"
-                            style="background: linear-gradient(135deg, #06B6D4 0%, #6366F1 100%);">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80&fit=crop"
+                                alt="Personal Portfolio Website" class="project-img-bg" />
+                            <div class="project-img-overlay"
+                                style="background: linear-gradient(135deg, rgba(6,182,212,0.55) 0%, rgba(99,102,241,0.65) 100%);">
+                            </div>
                             <i class="fas fa-laptop-code project-icon"></i>
                             <div class="project-overlay">
                                 <button class="project-link-btn modal-trigger-btn" aria-label="View Details">

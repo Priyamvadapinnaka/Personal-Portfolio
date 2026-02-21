@@ -913,8 +913,8 @@ body {
 /* ===== ABOUT SECTION ===== */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1.45fr;
-  gap: 80px;
+  grid-template-columns: 1fr 1.55fr;
+  gap: 60px;
   align-items: center;
 }
 
@@ -930,27 +930,55 @@ body {
 }
 
 .about-image-frame {
-  width: 270px;
-  height: 270px;
-  border-radius: var(--radius-xl);
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(6, 182, 212, 0.12));
-  border: 1px solid rgba(99, 102, 241, 0.22);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--glow-primary);
-  backdrop-filter: blur(10px);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 0 0 3px #6366F1, var(--glow-primary);
+  position: relative;
+  overflow: hidden;
   transition: var(--t-smooth);
 }
 
 .about-image-frame:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-hover);
+  box-shadow: 0 0 0 3px #06B6D4, var(--shadow-hover);
 }
 
-.about-avatar-large {
-  font-size: 6rem;
-  color: rgba(99, 102, 241, 0.35);
+/* Profile photo — fills the circle */
+.about-avatar-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  position: absolute;
+  inset: 0;
+}
+
+/* Minimal dark gradient at the bottom of the photo for icon contrast */
+.about-photo-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 42%;
+  background: linear-gradient(to top, rgba(10, 16, 32, 0.82) 0%, rgba(10, 16, 32, 0.35) 60%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Social icons pinned inside frame at the bottom */
+.about-social {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
 }
 
 /* Dot-pattern accent */
@@ -965,62 +993,58 @@ body {
   border-radius: var(--radius-md);
 }
 
-.about-social {
-  display: flex;
-  gap: 12px;
-}
 
 .social-icon {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background: var(--color-bg-glass);
-  border: 1px solid var(--color-border);
-  backdrop-filter: blur(8px);
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-text-muted);
+  color: #ffffff;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transition: var(--t-smooth);
+  backdrop-filter: blur(4px);
 }
 
 .social-icon:hover {
-  background: var(--gradient-primary);
-  border-color: transparent;
+  background: #6366F1;
+  border-color: #6366F1;
   color: white;
   transform: translateY(-3px);
-  box-shadow: var(--glow-primary);
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.65);
 }
 
 .about-heading {
   font-family: var(--font-heading);
-  font-size: 1.75rem;
+  font-size: 1.45rem;
   font-weight: 700;
   line-height: 1.3;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .about-text {
   color: var(--color-text-muted);
-  font-size: 0.97rem;
-  margin-bottom: 16px;
-  line-height: 1.85;
+  font-size: 0.88rem;
+  margin-bottom: 10px;
+  line-height: 1.75;
 }
 
 .about-info-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin: 28px 0;
+  gap: 10px;
+  margin: 16px 0;
 }
 
 .about-info-item {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  padding: 14px 16px;
+  gap: 3px;
+  padding: 10px 12px;
   background: var(--color-bg-glass);
   backdrop-filter: blur(10px);
   border: 1px solid var(--color-border);
@@ -1034,11 +1058,11 @@ body {
 }
 
 .info-label {
-  font-size: 0.76rem;
+  font-size: 0.70rem;
   color: var(--color-text-muted);
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -1048,7 +1072,7 @@ body {
 }
 
 .info-value {
-  font-size: 0.93rem;
+  font-size: 0.82rem;
   font-weight: 600;
   color: var(--color-text);
 }
@@ -1234,12 +1258,42 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  background: var(--color-bg-elevated);
+}
+
+/* Real photo fills the card image area */
+.project-img-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover .project-img-bg {
+  transform: scale(1.07);
+}
+
+/* Branded colour tint over the photo */
+.project-img-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transition: opacity var(--t-smooth);
+}
+
+.project-card:hover .project-img-overlay {
+  opacity: 0.7;
 }
 
 .project-icon {
   font-size: 3.8rem;
   color: rgba(255, 255, 255, 0.25);
   transition: var(--t-smooth);
+  position: relative;
+  z-index: 2;
 }
 
 .project-card:hover .project-icon {
@@ -1258,6 +1312,7 @@ body {
   gap: 14px;
   opacity: 0;
   transition: var(--t-smooth);
+  z-index: 3;
 }
 
 .project-card:hover .project-overlay {
