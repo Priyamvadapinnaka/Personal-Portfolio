@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ── Essential ─────────────────────────────────────── -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ── SEO Title & Description ───────────────────────── -->
+    <title>Priyamvada | Java Full Stack Developer — Portfolio</title>
+    <meta name="description"
+        content="Hi, I'm Priyamvada — a Java Full Stack Developer skilled in HTML, CSS, JavaScript, Bootstrap, and MySQL. Explore my projects, internship experience, certifications, and contact me." />
+    <meta name="keywords"
+        content="Priyamvada, Java developer, Full Stack Developer, portfolio, HTML CSS JavaScript, Bootstrap, MySQL, Andhra Pradesh, software developer, fresher developer" />
+    <meta name="author" content="Priyamvada" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- ── Canonical URL (update with your live domain) ─── -->
+    <link rel="canonical" href="https://priyamvada.dev/" />
+
+    <!-- ── Favicon — SVG (modern browsers) ──────────────── -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <!-- Fallback PNG (generate from SVG if needed) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon.svg" />
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon.svg" />
+    <!-- Web App Manifest colours -->
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="msapplication-TileColor" content="#0F172A" />
+    <meta name="msapplication-navbutton-color" content="#6366F1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Priyamvada" />
+
+    <!-- ── Open Graph (Facebook, LinkedIn, WhatsApp) ─────── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Priyamvada Portfolio" />
+    <meta property="og:title" content="Priyamvada | Java Full Stack Developer" />
+    <meta property="og:description"
+        content="Java Full Stack Developer — Building clean and scalable web solutions with Java, HTML, CSS, JavaScript & MySQL." />
+    <meta property="og:url" content="https://priyamvada.dev/" />
+    <meta property="og:image" content="https://priyamvada.dev/assets/icons/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Priyamvada — Java Full Stack Developer Portfolio" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- ── Twitter Card ──────────────────────────────────── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Priyamvada | Java Full Stack Developer" />
+    <meta name="twitter:description" content="Java Full Stack Developer — Building clean and scalable web solutions." />
+    <meta name="twitter:image" content="https://priyamvada.dev/assets/icons/og-image.svg" />
+    <meta name="twitter:image:alt" content="Priyamvada Portfolio Preview" />
+
+    <!-- ── Structured Data (JSON-LD) ─────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Priyamvada",
+      "url": "https://priyamvada.dev",
+      "image": "https://priyamvada.dev/assets/icons/og-image.svg",
+      "sameAs": [
+        "https://www.linkedin.com/in/priyamvada-pinnaka-51aa26300",
+        "https://github.com/priyamvada"
+      ],
+      "jobTitle": "Java Full Stack Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Open to Opportunities"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Prakasam Engineering College"
+      },
+      "knowsAbout": [
+        "Java", "JavaScript", "HTML5", "CSS3",
+        "Bootstrap", "MySQL", "OOP", "Full Stack Development"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Andhra Pradesh",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+
+    <!-- ── Performance: DNS prefetch ─────────────────────── -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+    <!-- ── Google Fonts: Poppins + Inter + Montserrat ────── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- ── Font Awesome Icons ─────────────────────────────── -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ── Main Stylesheet ───────────────────────────────── -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ===== SCROLL PROGRESS BAR ===== -->
+    <div class="scroll-progress-track">
+        <div class="scroll-progress-fill" id="scrollProgressFill"></div>
+    </div>
+
+    <!-- ===== CUSTOM CURSOR ===== -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- ===== LOADING SCREEN ===== -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">P</div>
+            <div class="loader-bar">
+                <div class="loader-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Priya<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <!-- Dark / Light mode toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <a href="https://drive.google.com/file/d/1NV5PLIiIX40EsG9K4nJvOJG5WFjd34jO/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="resumeNavBtn">
+                    <i class="fas fa-eye"></i> Resume
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero hero-center" id="home">
+        <div class="hero-bg">
+            <!-- Animated Particle Canvas -->
+            <canvas id="particlesCanvas" aria-hidden="true"></canvas>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="hero-center-content">
+            <!-- Availability Badge -->
+            <div class="hero-badge" data-aos data-aos-delay="0">
+                <span class="badge-dot"></span> Open to Full-Time Opportunities
+            </div>
+
+            <!-- Name -->
+            <h1 class="hero-title" data-aos data-aos-delay="80">
+                Hi, I'm <span class="gradient-text">Priyamvada</span>
+            </h1>
+
+            <!-- Typing role -->
+            <div class="hero-subtitle-wrapper" data-aos data-aos-delay="160">
+                <span class="hero-subtitle-static">I'm a </span>
+                <span class="hero-typed" id="typedText"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+
+            <!-- Tagline -->
+            <p class="hero-desc" data-aos data-aos-delay="240">
+                Building clean, scalable web solutions with Java &amp; modern frontend technologies.<br>
+                Passionate about writing efficient code that makes a real difference.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-actions" data-aos data-aos-delay="320">
+                <a href="#projects" class="btn btn-primary" id="heroViewProjects">
+                    <i class="fas fa-rocket"></i> View Projects
+                </a>
+                <a href="https://drive.google.com/uc?export=download&id=1NV5PLIiIX40EsG9K4nJvOJG5WFjd34jO"
+                    target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="resumeHeroBtn">
+                    <i class="fas fa-file-arrow-down"></i> Download Resume
+                </a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="hero-socials" data-aos data-aos-delay="400">
+                <a href="https://www.linkedin.com/in/priyamvada-pinnaka-51aa26300" target="_blank"
+                    rel="noopener noreferrer" class="hero-social-link" id="heroLinkedin" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:priyamvadauthsav714@gmail.com" class="hero-social-link" id="heroEmail"
+                    aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/priyamvada" target="_blank" rel="noopener noreferrer"
+                    class="hero-social-link" id="heroGithub" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <!-- Stats row -->
+            <div class="hero-stats" data-aos data-aos-delay="480">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="4">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-label">Months Internship</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <a href="#about" class="scroll-down" aria-label="Scroll to About">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section about-section" id="about">
+        <div class="section-container">
+            <div class="section-header" data-aos>
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="about-grid">
+                <!-- Left: Image + Social -->
+                <div class="about-image-col" data-aos>
+                    <div class="about-image-wrapper">
+                        <div class="about-image-frame">
+                            <!-- Gradient monogram avatar (replace with real photo when available) -->
+                            <div class="about-avatar-monogram" aria-label="Priyamvada avatar">
+                                <span class="monogram-letter">P</span>
+                                <div class="monogram-ring"></div>
+                            </div>
+                        </div>
+                        <div class="about-image-dots"></div>
+                    </div>
+                    <div class="about-social">
+                        <a href="https://www.linkedin.com/in/priyamvada-pinnaka-51aa26300" target="_blank"
+                            rel="noopener noreferrer" class="social-icon" id="aboutLinkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/priyamvada" target="_blank" rel="noopener noreferrer"
+                            class="social-icon" id="aboutGithub" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:priyamvadauthsav714@gmail.com" class="social-icon" id="aboutEmail"
+                            aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Text -->
+                <div class="about-content-col" data-aos>
+                    <h3 class="about-heading">
+                        Java Full Stack Developer &amp; <span class="gradient-text">Problem Solver</span>
+                    </h3>
+                    <p class="about-text">
+                        I am a motivated Computer Science graduate passionate about
+                        <strong>Java Full Stack Development</strong>. I enjoy building scalable applications
+                        with clean architecture and continuously improving my technical skills in a
+                        collaborative, agile environment.
+                    </p>
+                    <p class="about-text">
+                        My expertise spans core Java, web technologies (HTML, CSS, JavaScript, Bootstrap),
+                        and database management with MySQL. I am driven to solve real-world problems through
+                        well-structured, maintainable code.
+                    </p>
+
+                    <div class="about-info-grid">
+                        <div class="about-info-item">
+                            <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span>
+                            <span class="info-value">Andhra Pradesh, India</span>
+                        </div>
+                        <div class="about-info-item">
+                            <span class="info-label"><i class="fas fa-envelope"></i> Email</span>
+                            <span class="info-value">priyamvadauthsav714@gmail.com</span>
+                        </div>
+                        <div class="about-info-item">
+                            <span class="info-label"><i class="fas fa-graduation-cap"></i> Degree</span>
+                            <span class="info-value">B.Tech, CSE (72.3%)</span>
+                        </div>
+                        <div class="about-info-item">
+                            <span class="info-label"><i class="fas fa-briefcase"></i> Status</span>
+                            <span class="info-value available">Open to Work</span>
+                        </div>
+                    </div>
+
+                    <a href="https://drive.google.com/uc?export=download&id=1NV5PLIiIX40EsG9K4nJvOJG5WFjd34jO"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="aboutResumeBtn">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section skills-section" id="skills">
+        <div class="section-container">
+            <div class="section-header" data-aos>
+                <span class="section-tag">What I work with</span>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Tab switcher -->
+            <div class="skills-tabs" data-aos>
+                <button class="skill-tab active" data-tab="programming" id="tabProgramming">Programming</button>
+                <button class="skill-tab" data-tab="web" id="tabWeb">Web</button>
+                <button class="skill-tab" data-tab="database" id="tabDatabase">Database</button>
+                <button class="skill-tab" data-tab="concepts" id="tabConcepts">Concepts</button>
+            </div>
+
+            <div class="skills-content">
+
+                <!-- Programming -->
+                <div class="skills-panel active" id="panel-programming">
+                    <div class="skills-grid">
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#f89820,#c25b00);">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#f0db4f,#b89d00);">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#6366F1,#4F46E5);">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span class="skill-name">Core Java (OOP, Collections)</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#06B6D4,#0891B2);">
+                                <i class="fas fa-stream"></i>
+                            </div>
+                            <span class="skill-name">Java Multithreading</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#3ecf8e,#1aa870);">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <span class="skill-name">Java File Handling</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#f97316,#ea580c);">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <span class="skill-name">Exception Handling</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="82"></div>
+                            </div>
+                            <span class="skill-percent">82%</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Web -->
+                <div class="skills-panel" id="panel-web">
+                    <div class="skills-grid">
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#e34c26,#f06529);">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="92"></div>
+                            </div>
+                            <span class="skill-percent">92%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#264de4,#2965f1);">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                            <span class="skill-percent">88%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#7c3aed,#5b21b6);">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <span class="skill-name">Bootstrap</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#f0db4f,#b89d00);">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span class="skill-name">JavaScript (DOM, Events)</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="72"></div>
+                            </div>
+                            <span class="skill-percent">72%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#06B6D4,#0891B2);">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="86"></div>
+                            </div>
+                            <span class="skill-percent">86%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#f4511e,#e64a19);">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span class="skill-name">Git &amp; GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="78"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skills-panel" id="panel-database">
+                    <div class="skills-grid">
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#00758f,#005e73);">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#6366F1,#4F46E5);">
+                                <i class="fas fa-table"></i>
+                            </div>
+                            <span class="skill-name">SQL Queries &amp; Joins</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="78"></div>
+                            </div>
+                            <span class="skill-percent">78%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#3ecf8e,#1aa870);">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <span class="skill-name">Database Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="72"></div>
+                            </div>
+                            <span class="skill-percent">72%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#f59e0b,#d97706);">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <span class="skill-name">JDBC Connectivity</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="68"></div>
+                            </div>
+                            <span class="skill-percent">68%</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Concepts -->
+                <div class="skills-panel" id="panel-concepts">
+                    <div class="skills-grid">
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#6366F1,#4F46E5);">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                            <span class="skill-name">OOP Principles</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#06B6D4,#0891B2);">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <span class="skill-name">SDLC</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#ec4899,#be185d);">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <span class="skill-name">Multithreading</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#f97316,#ea580c);">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <span class="skill-name">Data Structures</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#3ecf8e,#1aa870);">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <span class="skill-name">REST API Concepts</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="65"></div>
+                            </div>
+                            <span class="skill-percent">65%</span>
+                        </div>
+
+                        <div class="skill-card" data-aos>
+                            <div class="skill-icon" style="background: linear-gradient(135deg,#f59e0b,#d97706);">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <span class="skill-name">Agile Basics</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="68"></div>
+                            </div>
+                            <span class="skill-percent">68%</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div><!-- /skills-content -->
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="section projects-section" id="projects">
+        <div class="section-container">
+            <div class="section-header" data-aos>
+                <span class="section-tag">What I've built</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Filter buttons -->
+            <div class="project-filters" data-aos>
+                <button class="filter-btn active" data-filter="all" id="filterAll">All</button>
+                <button class="filter-btn" data-filter="java" id="filterJava">Java</button>
+                <button class="filter-btn" data-filter="web" id="filterWeb">Web</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+
+                <!-- Project 1 -->
+                <div class="project-card" data-category="java" data-aos data-modal-id="1"
+                    data-title="Console-Based E-Learning Platform"
+                    data-desc="A Java-based console application that allows students to browse courses, enroll, and track their learning progress. Built using core Java, OOP principles, and file handling for persistent data storage — no database required. The system supports user authentication, course catalog browsing, progress tracking, and certificate generation."
+                    data-tags="Java,File Handling,OOP,Collections,Exception Handling" data-github="#" data-demo=""
+                    data-date="July 2025" data-color="linear-gradient(135deg, #f89820 0%, #6366F1 100%)"
+                    data-icon="fa-book-open">
+                    <div class="project-card-inner">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #f89820 0%, #6366F1 100%);">
+                            <i class="fas fa-book-open project-icon"></i>
+                            <div class="project-overlay">
+                                <button class="project-link-btn modal-trigger-btn" aria-label="View Details">
+                                    <i class="fas fa-expand-alt"></i> Details
+                                </button>
+                                <a href="#" class="project-link-btn" id="proj1Github">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">File Handling</span>
+                                <span class="project-tag">OOP</span>
+                            </div>
+                            <h3 class="project-title">Console-Based E-Learning Platform</h3>
+                            <p class="project-desc">
+                                A Java-based console application that allows students to browse courses,
+                                enroll, and track their learning progress. Built using core Java, OOP principles,
+                                and file handling for persistent data storage.
+                            </p>
+                            <div class="project-meta">
+                                <span class="project-date"><i class="fas fa-calendar"></i> July 2025</span>
+                                <button class="btn-view-modal" aria-label="View project details"><i
+                                        class="fas fa-eye"></i> View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="web" data-aos data-modal-id="2"
+                    data-title="Personal Portfolio Website"
+                    data-desc="A fully responsive personal portfolio website featuring smooth scroll animations, interactive UI elements, glassmorphism card design, a working contact form with JavaScript validation, custom cursor, particle animation, dark/light mode toggle, and a comprehensive skill showcase with animated progress bars."
+                    data-tags="HTML5,CSS3,JavaScript,Bootstrap,Responsive Design,Glassmorphism" data-github="#"
+                    data-demo="#" data-date="March 2024" data-color="linear-gradient(135deg, #06B6D4 0%, #6366F1 100%)"
+                    data-icon="fa-laptop-code">
+                    <div class="project-card-inner">
+                        <div class="project-image"
+                            style="background: linear-gradient(135deg, #06B6D4 0%, #6366F1 100%);">
+                            <i class="fas fa-laptop-code project-icon"></i>
+                            <div class="project-overlay">
+                                <button class="project-link-btn modal-trigger-btn" aria-label="View Details">
+                                    <i class="fas fa-expand-alt"></i> Details
+                                </button>
+                                <a href="#" class="project-link-btn" id="proj2Github">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="project-link-btn" id="proj2Demo">
+                                    <i class="fas fa-external-link-alt"></i> Live
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">Bootstrap</span>
+                            </div>
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-desc">
+                                A fully responsive personal portfolio website featuring smooth scroll animations,
+                                interactive UI elements, glassmorphism card design, and a working contact form
+                                with JavaScript validation.
+                            </p>
+                            <div class="project-meta">
+                                <span class="project-date"><i class="fas fa-calendar"></i> March 2024</span>
+                                <button class="btn-view-modal" aria-label="View project details"><i
+                                        class="fas fa-eye"></i> View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /projects-grid -->
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE / INTERNSHIP SECTION ===== -->
+    <section class="section experience-section" id="experience">
+        <div class="section-container">
+            <div class="section-header" data-aos>
+                <span class="section-tag">Where I've trained</span>
+                <h2 class="section-title">Internship <span class="gradient-text">Experience</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-card-header">
+                            <div class="timeline-company-logo">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="timeline-header-info">
+                                <h3 class="timeline-title">Full Stack Development with Java</h3>
+                                <span class="timeline-company">ExcelR Solutions</span>
+                            </div>
+                            <div class="timeline-badge">Internship</div>
+                        </div>
+
+                        <div class="timeline-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 2024 – Apr 2025</span>
+                            <span><i class="fas fa-clock"></i> 5 Months</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Andhra Pradesh, India</span>
+                        </div>
+
+                        <p class="timeline-desc">
+                            Completed an intensive full-stack development internship focused on Java-based web
+                            application development. Gained hands-on experience building end-to-end web solutions
+                            with a structured, professional approach to software engineering.
+                        </p>
+
+                        <!-- Key Responsibilities -->
+                        <ul class="timeline-responsibilities">
+                            <li><i class="fas fa-check-circle"></i> Java Full Stack training — Core Java, JDBC, Servlets
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Frontend development using HTML, CSS, JavaScript
+                                &amp; Bootstrap</li>
+                            <li><i class="fas fa-check-circle"></i> Designed and developed responsive web application
+                                interfaces</li>
+                            <li><i class="fas fa-check-circle"></i> Practiced OOP, SDLC, and Agile development
+                                methodologies</li>
+                        </ul>
+
+                        <div class="timeline-tech">
+                            <span>Java</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                            <span>MySQL</span>
+                            <span>JDBC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section class="section education-section" id="education">
+        <div class="section-container">
+            <div class="section-header" data-aos>
+                <span class="section-tag">Academic Journey</span>
+                <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Education Timeline -->
+            <div class="edu-timeline">
+
+                <!-- B.Tech -->
+                <div class="edu-timeline-item" data-aos>
+                    <div class="edu-timeline-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="edu-timeline-card">
+                        <div class="edu-timeline-header">
+                            <div>
+                                <h3 class="edu-timeline-degree">B.Tech — Computer Science &amp; Engineering</h3>
+                                <span class="edu-timeline-institution">Prakasam Engineering College</span>
+                            </div>
+                            <div class="edu-timeline-right">
+                                <div class="edu-timeline-badge graduated">Graduated</div>
+                                <span class="edu-timeline-grade">72.3%</span>
+                            </div>
+                        </div>
+                        <div class="edu-timeline-meta">
+                            <span><i class="fas fa-calendar"></i> 2021 – 2025</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Andhra Pradesh</span>
+                        </div>
+                        <p class="edu-timeline-desc">
+                            Graduated with a B.Tech in Computer Science &amp; Engineering, with focus on Java
+                            programming, data structures, databases, and web technologies. Active participant
+                            in technical events and coding clubs.
+                        </p>
+                        <div class="edu-timeline-tags">
+                            <span>Java</span><span>DBMS</span><span>DSA</span><span>OS</span><span>CN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intermediate -->
+                <div class="edu-timeline-item" data-aos>
+                    <div class="edu-timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="edu-timeline-card">
+                        <div class="edu-timeline-header">
+                            <div>
+                                <h3 class="edu-timeline-degree">Intermediate — MPC (Mathematics, Physics, Chemistry)
+                                </h3>
+                                <span class="edu-timeline-institution">Sri Chaitanya Junior College</span>
+                            </div>
+                            <div class="edu-timeline-right">
+                                <span class="edu-timeline-grade">95.9%</span>
+                            </div>
+                        </div>
+                        <div class="edu-timeline-meta">
+                            <span><i class="fas fa-calendar"></i> 2019 – 2021</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Andhra Pradesh</span>
+                        </div>
+                        <p class="edu-timeline-desc">
+                            Completed Intermediate with outstanding distinction. Strong foundation in Mathematics
+                            and Sciences; participated in national-level examinations.
+                        </p>
+                        <div class="edu-timeline-tags">
+                            <span>Maths</span><span>Physics</span><span>Chemistry</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SSC -->
+                <div class="edu-timeline-item" data-aos>
+                    <div class="edu-timeline-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="edu-timeline-card">
+                        <div class="edu-timeline-header">
+                            <div>
+                                <h3 class="edu-timeline-degree">SSC — Secondary School Certificate</h3>
+                                <span class="edu-timeline-institution">Saraswathi High School</span>
+                            </div>
+                            <div class="edu-timeline-right">
+                                <span class="edu-timeline-grade">10 / 10 GPA</span>
+                            </div>
+                        </div>
+                        <div class="edu-timeline-meta">
+                            <span><i class="fas fa-calendar"></i> 2018 – 2019</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Andhra Pradesh</span>
+                        </div>
+                        <p class="edu-timeline-desc">
+                            Achieved a perfect GPA of 10/10 in SSC board examinations, demonstrating exceptional
+                            academic performance across all subjects.
+                        </p>
+                        <div class="edu-timeline-tags">
+                            <span>School Topper</span><span>Perfect GPA</span><span>Excellence Award</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /edu-timeline -->
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS SECTION ===== -->
+    <section class="section certifications-section" id="certifications">
+        <div class="section-container">
+            <div class="section-header" data-aos>
+                <span class="section-tag">Credentials &amp; Achievements</span>
+                <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="certs-grid">
+
+                <div class="cert-card" data-aos>
+                    <div class="cert-logo" style="background: linear-gradient(135deg,#f89820,#c25b00);">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4 class="cert-name">Java Programming</h4>
+                        <span class="cert-issuer"><i class="fas fa-certificate"></i> Spoken Tutorial, IIT Bombay</span>
+                        <span class="cert-date"><i class="fas fa-calendar-check"></i> 2024</span>
+                    </div>
+                    <a href="#" class="cert-verify" id="cert1Verify" aria-label="Verify Certificate">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="cert-card" data-aos>
+                    <div class="cert-logo" style="background: linear-gradient(135deg,#06B6D4,#0891B2);">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4 class="cert-name">Responsive Web Development</h4>
+                        <span class="cert-issuer"><i class="fas fa-certificate"></i> Infosys Springboard</span>
+                        <span class="cert-date"><i class="fas fa-calendar-check"></i> 2024</span>
+                    </div>
+                    <a href="#" class="cert-verify" id="cert2Verify" aria-label="Verify Certificate">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="cert-card" data-aos>
+                    <div class="cert-logo" style="background: linear-gradient(135deg,#00758f,#005e73);">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4 class="cert-name">MySQL Database</h4>
+                        <span class="cert-issuer"><i class="fas fa-certificate"></i> Spoken Tutorial, IIT Bombay</span>
+                        <span class="cert-date"><i class="fas fa-calendar-check"></i> 2024</span>
+                    </div>
+                    <a href="#" class="cert-verify" id="cert3Verify" aria-label="Verify Certificate">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="cert-card" data-aos>
+                    <div class="cert-logo" style="background: linear-gradient(135deg,#6366F1,#4F46E5);">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4 class="cert-name">Full Stack Development</h4>
+                        <span class="cert-issuer"><i class="fas fa-certificate"></i> CV Corp</span>
+                        <span class="cert-date"><i class="fas fa-calendar-check"></i> 2025</span>
+                    </div>
+                    <a href="#" class="cert-verify" id="cert4Verify" aria-label="Verify Certificate">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact-section" id="contact">
+        <div class="section-container">
+            <div class="section-header" data-aos>
+                <span class="section-tag">Let's work together</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid">
+
+                <!-- Left: Info -->
+                <div class="contact-info-col" data-aos>
+                    <h3 class="contact-heading">Let's Connect!</h3>
+                    <p class="contact-subtext">
+                        I'm actively looking for full-time opportunities in Java Full Stack Development.
+                        Whether you have a job opening, a project idea, or simply want to say hello —
+                        feel free to reach out. I'd love to hear from you!
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-detail-label">Email</span>
+                                <a href="mailto:priyamvadauthsav714@gmail.com" class="contact-detail-value"
+                                    id="contactEmailLink">
+                                    priyamvadauthsav714@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="contact-detail-label">Phone</span>
+                                <a href="tel:+919666034722" class="contact-detail-value" id="contactPhoneLink">
+                                    +91 96660 34722
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div>
+                                <span class="contact-detail-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/priyamvada-pinnaka-51aa26300" target="_blank"
+                                    rel="noopener noreferrer" class="contact-detail-value" id="contactLinkedin">
+                                    linkedin.com/in/priyamvada-pinnaka
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-detail-label">Location</span>
+                                <span class="contact-detail-value">Andhra Pradesh, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/priyamvada-pinnaka-51aa26300" target="_blank"
+                            rel="noopener noreferrer" class="contact-social-btn" id="csLinkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/priyamvada" target="_blank" rel="noopener noreferrer"
+                            class="contact-social-btn" id="csGithub" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:priyamvadauthsav714@gmail.com" class="contact-social-btn" id="csEmail"
+                            aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Form -->
+                <div class="contact-form-col" data-aos>
+                    <form class="contact-form" id="contactForm" novalidate>
+
+                        <div class="form-group">
+                            <label for="contactName">Your Name</label>
+                            <div class="form-input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="contactName" name="name" placeholder="John Doe" required
+                                    autocomplete="off" />
+                            </div>
+                            <span class="form-error" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Your Email</label>
+                            <div class="form-input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="contactEmail" name="email" placeholder="john@example.com"
+                                    required autocomplete="off" />
+                            </div>
+                            <span class="form-error" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <div class="form-input-wrapper textarea-wrapper">
+                                <i class="fas fa-comment"></i>
+                                <textarea id="contactMessage" name="message" rows="5"
+                                    placeholder="Hi Priyamvada, I'd love to connect about..." required></textarea>
+                            </div>
+                            <span class="form-error" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="submitContactBtn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="nav-logo">
+                        <span class="logo-bracket">&lt;</span>Priya<span class="logo-bracket">/&gt;</span>
+                    </span>
+                    <p>
+                        Java Full Stack Developer — building clean, scalable web solutions.
+                        Open to full-time opportunities and exciting collaborations.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-links-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-links-title">Contact</h4>
+                    <ul>
+                        <li>
+                            <a href="mailto:priyamvadauthsav714@gmail.com">
+                                <i class="fas fa-envelope"></i> priyamvadauthsav714@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+919666034722">
+                                <i class="fas fa-phone"></i> +91 96660 34722
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/priyamvada-pinnaka-51aa26300" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <span><i class="fas fa-map-marker-alt"></i> Andhra Pradesh, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    © 2025 <span class="gradient-text">Priyamvada</span>. All rights reserved.
+                    Designed &amp; Built with <i class="fas fa-heart" style="color:#ef4444;"></i>
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/priyamvada-pinnaka-51aa26300" target="_blank"
+                        rel="noopener noreferrer" id="footerLinkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/priyamvada" target="_blank" rel="noopener noreferrer" id="footerGithub"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:priyamvadauthsav714@gmail.com" id="footerEmail" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ===== FLOATING RESUME DOWNLOAD FAB ===== -->
+    <a href="https://drive.google.com/uc?export=download&id=1NV5PLIiIX40EsG9K4nJvOJG5WFjd34jO" target="_blank"
+        rel="noopener noreferrer" class="resume-fab" id="resumeFab" aria-label="Download Resume">
+        <i class="fas fa-file-arrow-down"></i>
+        <span class="resume-fab-label">Resume</span>
+        <span class="resume-fab-ripple"></span>
+    </a>
+
+    <!-- ===== PROJECT MODAL ===== -->
+    <div class="project-modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="project-modal-card">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-banner" id="modalBanner">
+                <i class="fas fa-code modal-banner-icon" id="modalBannerIcon"></i>
+                <div class="modal-banner-shine"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-tags" id="modalTags"></div>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-desc" id="modalDesc"></p>
+                <div class="modal-meta" id="modalMeta"></div>
+                <div class="modal-actions" id="modalActions"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TOAST NOTIFICATION ===== -->
+    <div class="toast" id="toast" role="alert" aria-live="polite">
+        <i class="fas fa-check-circle toast-icon"></i>
+        <span class="toast-msg" id="toastMsg"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
